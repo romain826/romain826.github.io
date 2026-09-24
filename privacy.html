@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Politique de confidentialité — Assistant personnel de Romain</title>
+<meta name="description" content="Politique de confidentialité : accès en lecture seule à Gmail, Google Calendar et Google Drive, pour un usage personnel unique, sans partage de données.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --fond: #ffffff;
+    --texte: #1b1b1f;
+    --doux: #5c5c66;
+    --trait: #e3e3e8;
+    --lien: #2f5bd7;
+    --encadre: #f6f7f9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --fond: #16161a; --texte: #ececf1; --doux: #a0a0ad; --trait: #2c2c33; --lien: #8aa9ff; --encadre: #1e1e24; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 4rem 1rem;
+    background: var(--fond);
+    color: var(--texte);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 42rem; margin: 0 auto; }
+  h1 { font-size: 1.7rem; line-height: 1.25; margin: 0 0 .3rem; letter-spacing: -.02em; }
+  .maj { color: var(--doux); margin: 0 0 2.5rem; font-size: .92rem; }
+  h2 { font-size: 1.05rem; margin: 2.2rem 0 .6rem; }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.2rem; }
+  li { margin-bottom: .45rem; }
+  a { color: var(--lien); }
+  .encadre {
+    background: var(--encadre);
+    border: 1px solid var(--trait);
+    border-radius: 8px;
+    padding: 1rem 1.2rem;
+    margin: 1.2rem 0;
+  }
+  .encadre p:last-child { margin-bottom: 0; }
+  footer {
+    margin-top: 3rem; padding-top: 1.2rem;
+    border-top: 1px solid var(--trait);
+    color: var(--doux); font-size: .9rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Politique de confidentialité</h1>
+  <p class="maj">Assistant personnel de Romain &middot; dernière mise à jour&nbsp;: 24 septembre 2026</p>
+
+  <h2>1. Nature du projet</h2>
+  <p>
+    Cet assistant est un projet <strong>personnel et privé</strong>, utilisé par une seule personne&nbsp;:
+    son auteur. Il n'est pas proposé au public, n'accepte aucune inscription et ne traite les données
+    d'aucun autre utilisateur.
+  </p>
+
+  <h2>2. Données consultées</h2>
+  <p>Avec l'accord explicite de l'utilisateur, donné via OAuth&nbsp;2.0, l'application accède <strong>en lecture seule</strong> à&nbsp;:</p>
+  <ul>
+    <li><strong>Gmail</strong> (<code>gmail.readonly</code>)&nbsp;: en-têtes et contenu des messages, pour retrouver et résumer une information.</li>
+    <li><strong>Google Calendar</strong> (<code>calendar.readonly</code>)&nbsp;: événements à venir, pour consulter l'agenda.</li>
+    <li><strong>Google Drive</strong> (<code>drive.metadata.readonly</code>)&nbsp;: uniquement les métadonnées (nom, date de modification). Le contenu des fichiers n'est pas lu.</li>
+  </ul>
+  <p>
+    Aucune autorisation d'écriture n'est demandée&nbsp;: l'application ne peut ni envoyer un message,
+    ni modifier un agenda, ni créer ou supprimer un fichier.
+  </p>
+
+  <h2>3. Utilisation</h2>
+  <p>
+    Ces données servent exclusivement à répondre aux demandes de l'utilisateur, sur sa propre machine
+    et à sa demande. Elles ne sont jamais utilisées à des fins publicitaires, ni pour du profilage,
+    ni pour entraîner des modèles.
+  </p>
+
+  <h2>4. Conservation et sécurité</h2>
+  <ul>
+    <li>Le jeton d'accès OAuth est stocké <strong>localement</strong>, sur une machine personnelle, en accès restreint à son propriétaire.</li>
+    <li>Aucun serveur public, aucune base de données hébergée, aucun intermédiaire.</li>
+    <li>Les contenus consultés sont traités au moment de la demande et ne sont pas constitués en archive.</li>
+  </ul>
+
+  <h2>5. Partage</h2>
+  <p>
+    <strong>Aucune donnée n'est partagée, vendue, louée ou transmise à un tiers</strong>, dans aucune
+    circonstance. Les données ne quittent pas la machine de l'utilisateur, en dehors des appels aux
+    API Google nécessaires pour les obtenir.
+  </p>
+
+  <h2>6. Conformité à l'usage limité des données Google</h2>
+  <div class="encadre">
+    <p>
+      L'utilisation et le transfert des informations reçues des API Google par cette application
+      respectent la <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google API Services User Data Policy</a>,
+      y compris ses exigences d'usage limité (<em>Limited Use</em>).
+    </p>
+    <p>
+      <em>This application's use and transfer of information received from Google APIs adheres to the
+      Google API Services User Data Policy, including the Limited Use requirements.</em>
+    </p>
+  </div>
+
+  <h2>7. Retrait de l'accès</h2>
+  <p>
+    L'utilisateur peut révoquer l'accès à tout moment depuis
+    <a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a>.
+    La révocation prend effet immédiatement&nbsp;; le jeton local devient alors inutilisable et est supprimé.
+  </p>
+
+  <h2>8. Modifications</h2>
+  <p>
+    Toute évolution de cette politique sera publiée sur cette page, avec mise à jour de la date
+    indiquée en haut.
+  </p>
+
+  <footer>
+    <a href="index.html">Retour à l'accueil</a>
+  </footer>
+</main>
+</body>
+</html>
