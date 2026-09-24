@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Assistant personnel de Romain</title>
+<meta name="description" content="Projet personnel : un assistant privé, à usage strictement individuel.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --fond: #ffffff;
+    --texte: #1b1b1f;
+    --doux: #5c5c66;
+    --trait: #e3e3e8;
+    --lien: #2f5bd7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --fond: #16161a; --texte: #ececf1; --doux: #a0a0ad; --trait: #2c2c33; --lien: #8aa9ff; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 4rem 1rem;
+    background: var(--fond);
+    color: var(--texte);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 42rem; margin: 0 auto; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .4rem; letter-spacing: -.02em; }
+  .sous-titre { color: var(--doux); margin: 0 0 2.5rem; }
+  h2 { font-size: 1.05rem; margin: 2.2rem 0 .6rem; }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.2rem; }
+  li { margin-bottom: .4rem; }
+  a { color: var(--lien); }
+  footer {
+    margin-top: 3rem; padding-top: 1.2rem;
+    border-top: 1px solid var(--trait);
+    color: var(--doux); font-size: .9rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Assistant personnel de Romain</h1>
+  <p class="sous-titre">Projet privé, à usage strictement individuel.</p>
+
+  <p>
+    Ce site accompagne un assistant personnel développé pour un usage privé. Il n'est pas un
+    service commercial, n'est ouvert à aucune inscription et ne s'adresse à aucun autre utilisateur
+    que son auteur.
+  </p>
+
+  <h2>À quoi il sert</h2>
+  <p>
+    Il aide son unique utilisateur à s'organiser au quotidien : retrouver une information dans ses
+    messages, consulter son agenda, préparer des rappels et automatiser quelques tâches
+    domestiques. Tout tourne sur une machine personnelle, sans serveur public ni hébergement tiers.
+  </p>
+
+  <h2>Accès aux données</h2>
+  <ul>
+    <li>Connexion au compte Google de l'auteur <strong>en lecture seule</strong>, via OAuth&nbsp;2.0.</li>
+    <li>Aucun mot de passe n'est conservé&nbsp;: seul un jeton révocable est utilisé.</li>
+    <li>Aucune donnée n'est partagée, revendue ni transmise à un tiers.</li>
+  </ul>
+  <p>Le détail figure sur la <a href="privacy.html">politique de confidentialité</a>.</p>
+
+  <footer>
+    Projet personnel &middot; <a href="privacy.html">Confidentialité</a>
+  </footer>
+</main>
+</body>
+</html>
